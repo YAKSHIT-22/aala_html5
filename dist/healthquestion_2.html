@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="./assets/logo.svg" />
+        <link rel="canonical" href="https://aala.vercel.app" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+          name="description"
+          content="AALA - Artificial Intelligence-Assisted Insurance Policy and Gamification Platform
+              AI algorithms and advanced analytics monitor driving behavior, including speed, acceleration, braking, and traffic rule adherence.
+              Personalized insurance premiums based on individual driving behavior, rewarding safer drivers with lower premiums.
+              Gamification elements such as challenges, leaderboards, achievements, and rewards to enhance engagement and motivation."
+        />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="keywords"
+          content="AALA , AI, Gamification, Assisted Insurance, driving behavior, acceleration, engagement, motivation, leaderboards, challenges, Community, Personalized insurance, University, traffic rule adherence, advanced analytics"
+        />
+        <meta name="language" content="English" />
+        <meta name="author" content="AALA - Premium For You" />
+        <meta
+          property="og:title"
+          content="Artificial Intelligence-Assisted Insurance Policy and Gamification Platform"
+        />
+        <meta
+          property="og:description"
+          content="AI algorithms and advanced analytics monitor driving behavior, including speed, acceleration, braking, and traffic rule adherence.
+              Personalized insurance premiums based on individual driving behavior, rewarding safer drivers with lower premiums.
+              Gamification elements such as challenges, leaderboards, achievements, and rewards to enhance engagement and motivation."
+        />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/YAKSHIT-22/Ogtag-Photos/main/ogimage3.png"
+        />
+        <meta property="og:url" content="https://aala.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:author" content="Yakshit" />
+        <meta property="og:datePublished" content="July 21, 2023" />
+        <meta property="og:article:author" content="Yakshit" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <title>AALA - Premium For You</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+      </head>
+<body>
+    <div class="sticky top-0 z-20 max-h-screen text-white">
+        <header class="noise-container shadow-lg">
+          <div class="noise"></div>
+          <nav class="px-[1rem] mx-auto w-full max-w-screen-2xl md:px-6 flex h-[5rem] justify-center items-center">
+            <a
+              href="/"
+              title="Home"
+              data-home-link=""
+              class="flex items-center justify-center"
+            >
+              <img src="./assets/logo.svg" alt="logo" class="w-20 h-auto" />
+            </a>
+  
+            <div class="ml-16 hidden shrink flex-row items-center gap-16 lg:flex">
+              <a  href="/#home" rel="prefetch" class="link">
+                Home
+              </a>
+              <a  href="/#about" rel="prefetch" class="link">
+                About
+              </a>
+              <a  href="/#community" rel="prefetch" class="link">
+                Community
+              </a>
+              <a  href="/#team" rel="prefetch" class="link">
+                Team
+              </a>
+              <a  href="/#contact" rel="prefetch" class="link">
+                Contact
+              </a>
+            </div>
+  
+            <div class="flex-1"></div>
+  
+            <div class="hidden lg:block">
+              <div class="flex items-center gap-4 transition-all">
+                  <button
+                  onClick = "window.location.href = './login.html'"
+                    class="relative bg-white text-[#17191e] border  hover:bg-transparent hover:text-white hover:border-white hover:border  inline-flex h-[3rem] items-center justify-center gap-[1rem] rounded-full border-opacity-[1] border-[rgb(242,246,250,0.1)] px-[2.5rem] text-center text-base transition-all tracking-wide"
+                  >
+                    LOGIN
+                  </button>
+              </div>
+            </div>
+            <button
+              id="header-drawer-button"
+              type="button"
+              class="link ml-6 lg:hidden"
+              aria-controls="header-drawer"
+              aria-expanded="false"
+            >
+              <svg
+                data-hk="0-0"
+                width="24"
+                height="17"
+                viewBox="0 0 24 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6"
+              >
+                <line y1="0.5" x2="24" y2="0.5" stroke="currentColor"></line>
+                <line y1="8.5" x2="24" y2="8.5" stroke="currentColor"></line>
+                <line y1="16.5" x2="24" y2="16.5" stroke="currentColor"></line>
+              </svg>
+              <span class="sr-only">Show Menu</span>
+            </button>
+          </nav>
+          <div
+            class='hidden items-start justify-center fixed top-0 z-[2] w-screen min-h-screen h-full'
+          >
+            <div class="flex items-center justify-center noise-container flex-col h-full w-full">
+              <div class="noise"></div>
+              <nav
+                aria-label="Primary"
+                class="flex flex-col divide-y w-full text-xl divide-gray-500 p-2 text-left"
+              >
+                <div class="flex w-full items-center justify-between p-6">
+                  <a href="/">
+                    
+                    <div
+                      class="flex items-center justify-center "
+                    >
+                      <img src={logo} alt="logo" class="w-20 h-auto" />
+                    </div>
+                  </a>
+                  <div class="flex items-center justify-center">
+                    <button
+                      class="text-black bg-white rounded-full p-3 s:p-4 md:w-12 md:h-12 s:w-10 s:h-10 h-10 w-10 flex items-center justify-center focus:outline-none"
+                    >
+                      X
+                    </button>
+                  </div>
+                </div>
+                <a  href="/#home" rel="prefetch" class="link p-5">
+                  Home
+                </a>
+                <a  href="/#about" rel="prefetch" class="link p-5">
+                  About
+                </a>
+                <a
+                  
+                  href="/#community"
+                  rel="prefetch"
+                  class="link p-5"
+                >
+                  Community
+                </a>
+                <a  href="/#team" rel="prefetch" class="link p-5">
+                  Team
+                </a>
+                <a
+                  
+                  href="/#contact"
+                  rel="prefetch"
+                  class="link p-5"
+                >
+                  Contact
+                </a>
+                <div class="flex items-center sm:flex-row flex-col justify-center sm:justify-between gap-4 w-full p-6">
+                  <div class="flex items-center gap-4 w-[80%] sm:w-[40%]">
+                      <button
+                        onClick = "window.location.href = './login.html'"
+                        class="button button-white w-full relative bg-gradient-83 from-[#00febe] to-[#FF5500] text-white inline-flex h-[3rem] items-center justify-center gap-[1rem] rounded-full border-opacity-[1] border-[rgb(242,246,250,0.1)] px-[2.5rem] text-center text-base font-[800] transition-all tracking-wide"
+                      >
+                        LOGIN
+                      </button>
+                  </div>
+                  <div class="flex items-center justify-center w-[80%] sm:w-[40%]">
+                    <button class="hover:bg-white bg-[#262626] group  transition-all  hover:text-black text-white  p-4 w-full flex items-center justify-center rounded-full">
+                      <p class="flex items-center justify-center gap-2 font-medium transition-all text-xs sm:text-sm">
+                        JOIN OUR COMMUNITY
+                        <span class="group-hover:text-black text-white group-hover:pl-1 transition-all">
+                          <svg
+                            width="11"
+                            height="10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="m6.143 9 4-4-4-4M10.143 5H1"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </span>
+                      </p>
+                    </button>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <hr class="border-gray-500"></hr>
+      </div>
+      <section
+      class="relative overflow-x-hidden pb-20 pt-14 sm:pt-20 bg-grid"
+      id="selectionPage"
+    >
+      <div class="z-[-30] absolute inset-0"></div>
+      <div class="flex flex-col items-center gap-2">
+        <div class="flex items-center justify-center p-4 w-full">
+          <h1 class="text-5xl px-2 s:px-4 text-center text-gray-50 font-bold sm:max-w-4xl uppercase">
+            Grooming Habits
+          </h1>
+        </div>
+        <div
+      class="flex items-center justify-center flex-col gap-2 w-full"
+    >
+      <div class="flex items-center sm:flex-row flex-col justify-center sm:justify-between gap-4 w-full xs:w-[85%] lg:w-[75%] p-2 lg:p-6">
+        <form class="mx-auto grid min-w-0 max-w-screen-2xl grid-cols-1 gap-6 xs:px-2 lg:px-4 sm:grid-cols-2">
+          <div class="noise-panel flex flex-col min-w-0 relative text-gray-200 md:hover:scale-105 transition ease-in-out duration-500">
+            <label
+              htmlFor="1"
+              class="flex flex-1 flex-col gap-6 p-6 text-left "
+            >
+              <div class="flex h-full flex-col justify-center gap-2">
+                <div class="flex items-center justify-between w-full">
+                  <aside class="code p-1">Every 3 Days</aside>
+                  <input
+                    type="radio"
+                    id="1"
+                    name="score"
+                    required
+                    class="p-3 flex items-center justify-center cursor-pointer"
+                  />
+                </div>
+                <img src="./assets/hSecond.svg" alt="rash" class="mx-auto h-[15rem]" />
+                <div class="heading-3 p-2 flex w-full justify-end">
+                  <img
+                    src="./assets/healthbutton.svg"
+                    alt="drivingbutton"
+                    class="object-cover opacity-0 h-[2.5rem] w-[2.5rem]"
+                  />
+                </div>
+              </div>
+            </label>
+          </div>
+          <div class="noise-panel flex flex-col min-w-0 relative text-gray-200 md:hover:scale-105 transition ease-in-out duration-500">
+            <label
+              htmlFor="2"
+              class="flex flex-1 flex-col gap-6 p-6 text-left "
+            >
+              <div class="flex h-full flex-col justify-center gap-2">
+                <div class="flex items-center justify-between w-full">
+                  <aside class="code p-1">Every Week</aside>
+                  <input
+                    type="radio"
+                    id="2"
+                    name="score"
+                    required
+                    class="p-3 flex items-center justify-center cursor-pointer"
+                  />
+                </div>
+                <img
+                  src="./assets/hSecond2.svg"
+                  alt="careful"
+                  class="mx-auto h-[15rem]"
+                />
+                <div class="heading-3 p-2 flex w-full justify-end ">
+                  <img
+                    src="./assets/health.svg"
+                    alt="drivingbutton"
+                    class="object-cover opacity-0 h-[2.5rem] w-[2.5rem]"
+                  />
+                </div>
+              </div>
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="flex items-center justify-center flex-row max-w-4xl w-[90%]  mb-32 md:mb-12 p-2 lg:p-6 gap-6">
+        <button
+          onClick="window.location.href='./healthquestion_1.html'"
+          class="button button-white w-full relative bg-[#FF5500] text-white inline-flex h-[3rem] items-center justify-center gap-[1rem] rounded-lg border-opacity-[1] border-[rgb(242,246,250,0.1)] px-[2.5rem] text-center text-xl font-[500] transition-all tracking-wide"
+        >
+          Prev
+        </button>
+        <button
+          onClick="window.location.href='./healthquestion_3.html'"
+          class="button button-white w-full relative bg-[#FF5500] text-white inline-flex h-[3rem] items-center justify-center gap-[1rem] rounded-lg border-opacity-[1] border-[rgb(242,246,250,0.1)] px-[2.5rem] text-center text-xl font-[500] transition-all tracking-wide"
+        >
+          Next
+        </button>
+      </div>
+    </motion.div>
+      </div>
+    </section>
+      <section>
+        <hr class="border-gray-500"></hr>
+        <div class="noise-container ">
+          <div class="noise "></div>
+          <footer class="md:px-[2rem] px-[1rem] mx-auto w-full  max-w-screen-2xl ">
+            <nav
+              aria-label="Secondary"
+              class="flex flex-col items-start text-white font-medium text-lg justify-between gap-12 py-8 sm:flex-row-reverse md:py-12"
+            >
+              <div class="flex items-center gap-4">
+                <a
+                  target="_blank"
+                  rel="noopener noreferer"
+                  class="link"
+                  href="https://github.com"
+                >
+                  <svg
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                    width="32"
+                    height="32"
+                    astro-icon="social/github"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferer"
+                  class="link"
+                  href="https://discord.com"
+                >
+                  <svg
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                    width="32"
+                    height="32"
+                    astro-icon="social/discord"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferer"
+                  class="link"
+                  href="https://twitter.com"
+                >
+                  <svg
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                    width="32"
+                    height="32"
+                    astro-icon="social/twitter"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="grid grid-cols-2 gap-12 sm:flex sm:flex-wrap sm:gap-16 lg:gap-20 text-white font-medium text-lg">
+                <section class="group flex flex-col text-white font-medium text-lg">
+                  <img src="./assets/logo.svg" alt="logo" class="w-20 h-auto" />
+                </section>
+                <section class="group flex flex-col text-white font-medium text-lg">
+                  <h2
+                    id="footerHeading1"
+                    class="code mb-4 text-xl leading-none opacity-50"
+                  >
+                    Community
+                  </h2>
+                  <ul
+                    aria-labelledby="footerHeading0"
+                    class="flex flex-col gap-2"
+                  >
+                    <li>
+                      <a href="" class="link whitespace-nowrap">
+                        Incentives
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="link whitespace-nowrap">
+                        Challenges
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="link whitespace-nowrap">
+                        Social Interactions
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+                <section class="group flex flex-col text-white font-medium text-lg">
+                  <h2
+                    id="footerHeading2"
+                    class="code mb-4 text-xl leading-none opacity-50"
+                  >
+                    About
+                  </h2>
+                  <ul
+                    aria-labelledby="footerHeading0"
+                    class="flex flex-col gap-2"
+                  >
+                    <li>
+                      <a href="" class="link whitespace-nowrap">
+                        Team
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="link whitespace-nowrap">
+                        Ideas
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/themes/" class="link whitespace-nowrap">
+                        Collaborations
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+            </nav>
+            <hr class="border-gray-500" />
+            <nav
+              aria-label="Legal"
+              class="grid grid-cols-[1fr,auto] items-center gap-x-4 gap-y-16 py-8 opacity-60 md:grid-cols-[auto,1fr,auto] md:py-12"
+            >
+              <a class="link text-white font-medium text-lg" href="/privacy">
+                Privacy Policy
+              </a>
+              <a
+                class="link mr-auto text-white font-medium text-lg"
+                href="/terms"
+              >
+                Terms of Service
+              </a>
+              <p class="col-span-2 text-center md:col-span-1 text-white font-medium text-lg">
+                © 2023
+                <a class="link" target="_blank">
+                  AALA
+                </a>
+              </p>
+            </nav>
+          </footer>
+        </div>
+      </section>
+</body>
+</html>
